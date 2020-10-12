@@ -1,0 +1,23 @@
+<:Title>
+  Feminism App
+
+<:Body>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form e-submit="create_post">
+        <div class="form-group">
+          <label for="postInput">Post new content</label>
+          <input type="text" class="form-control" id="postInput" placeholder="Paste image link here..." value="{{ _src }}" />
+        </div>
+        {{ if _src.present? }}
+        <img src="{{ _src }}" alt="..." class="img-rounded img-responsive center-block">
+        <br>
+        <button type="button" class="btn btn-default pull-right" e-click="create_post">Submit</button>
+        {{ end }}
+      </form>
+    </div>
+  </div>
+
+  {{ store.posts.reverse.each do |post| }}
+    <:posts model="{{ post }}" />
+  {{ end }}

@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <img src="{{ src }}" alt="..." class="img-rounded img-responsive center-block">
+  </div>
+  <div class="panel-body">
+    <button type="button" class="btn btn-default" e-click="increase_music" data-toggle="tooltip" data-placement="bottom" title="I like this.">
+      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+      <span class="badge">{{ music }}</span>
+    </button>
+    <button type="button" class="btn btn-default" e-click="increase_star" data-toggle="tooltip" data-placement="bottom" title="I really like this!">
+      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+      <span class="badge">{{ star }}</span>
+    </button>
+    <button type="button" class="btn btn-default" e-click="increase_ok"  data-toggle="tooltip" data-placement="bottom" title="I love this!">
+      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+      <span class="badge">{{ ok }}</span>
+    </button>
+    <button type="button" class="btn btn-default" e-click="increase_upload" data-toggle="tooltip" data-placement="bottom" title="This is awsome!">
+      <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+      <span class="badge">{{ upload }}</span>
+    </button>
+    <button type="button" class="btn btn-default" e-click="increase_flasher" data-toggle="tooltip" data-placement="bottom" title="Can't get enough!">
+      <span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+      <span class="badge">{{ flasher }}</span>
+    </button>
+    <button type="button" class="btn btn-default" e-click="increase_up" data-toggle="tooltip" data-placement="bottom" title="This is the best!">
+      <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+      <span class="badge">{{ up }}</span>
+    </button>
+  </div>
