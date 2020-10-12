@@ -2,4 +2,5 @@
 
 An app to exhibit, encourage, and inspire.
 
-![Image of Yaktocat](screenshot.png)
+![Screenshot About](screenshot_about.png)
+![Screenshot Main](screenshot_main.png)
